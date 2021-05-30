@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #006fb8;
+}
+
+a{
+  color: white;
+  text-decoration: underline;
+}
+
+article {
+  background-color: #fff;
+  width: 90%;
+  height: 297mm;
+  max-width: 210mm;
+  padding: 4rem 2rem;
+  margin: 1rem auto;
+  position: relative;
+}
+
+article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.logo {
+  text-align: right;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.logo>div p:first-of-type {
+  font-size: 2.5rem;
+}
+
+.home-icon img {
+  width: 100%;
+}
+
+.home-icon {
+  max-width: 200px;
+  margin-left: auto;
+}
+
+h1 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.mb-1 {
+  margin-bottom: .5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+
+.prepared-by {
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.prepared-for {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small {
+  font-size: .9rem;
+  font-weight: normal;
+}
+
+.d-flex>div {
+  margin-bottom: 1rem;
+}
+
+article:first-of-type li {
+  list-style: none;
+}
+article:first-of-type li i {
+  margin-right: .5rem;
+  color: #006fb8;
+}
+
+.color-green {
+  color: #006fb8;
+}
+
+article:nth-of-type(2) {
+  font-size: 14px;
+}
+
+article:nth-of-type(2) ul, .list {
+  list-style: disc;
+  padding: 0 3rem;
+}
+
+.video-caption>div:first-of-type {
+  padding: .5rem;
+  text-align: justify;
+  background-color: black;
+  color: #fff;
+}
+
+.video {
+  height: 100%;
+  min-height: 100px;
+  background-color: gray;
+}
+
+.video-caption {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+
+.manager {
+  display: flex;
+}
+
+.manager img {
+  border-radius: 5px;
+  border: 3px solid #006fb8;
+}
+
+.manager>div:nth-of-type(2) {
+  padding: 5px .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+article:not(article:first-of-type) header {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+article:not(article:first-of-type) .logo {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+article:not(article:first-of-type) .logo>div p:first-of-type {
+  font-size: 1.3rem;
+}
+
+article:not(article:first-of-type) .home-icon {
+  width: 3.5rem;
+  margin-left: 5px;
+}
+
+article:not(article:first-of-type) .logo>p {
+  font-size: 9px;
+  letter-spacing: .9px;
+}
+
+footer>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  padding: 0 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+thead th {
+  color: white;
+  background-color: #006fb8;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+  font-weight: normal;
+  font-size: .9rem;
+}
+
+thead td:first-of-type {
+  border-left: none;
+  border-top: none;
+}
+
+tbody td {
+  background-color: #3fb1fd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(240, 240, 240);
+}
+
+tfoot th, tfoot td {
+  border: none;
+}
+
+tfoot td {
+  border-bottom: 1px solid gray;
+}
+
+tfoot th {
+  text-align: right;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+table.financial tr {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  text-align: left;
+}
+
+table.financial tbody tr.subhead {
+  background-color: lightgray;
+}
+
+table.financial tbody tr {
+  background-color: rgb(240, 240, 240);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+section {
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-bottom: none;
+  padding: .5rem;
+}
+
+section:last-of-type {
+  border-bottom: 1px solid gray;
+}
+
+section h4 {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .video-caption {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr;
+  }
+}
