@@ -20,7 +20,7 @@ a{
 article {
   background-color: #fff;
   width: 90%;
-  height: 297mm;
+  min-height: 297mm;
   max-width: 210mm;
   padding: 4rem 2rem;
   margin: 1rem auto;
@@ -44,8 +44,8 @@ header {
   margin: 0 auto;
 }
 
-.logo>div p:first-of-type {
-  font-size: 2.5rem;
+.logo>div p:first-of-type,h1 {
+  font-size: 1.5rem;
 }
 
 .home-icon img {
@@ -59,8 +59,8 @@ header {
 
 h1 {
   margin-top: 3rem;
-  font-size: 2.5rem;
   text-transform: capitalize;
+  
 }
 
 .mb-1 {
@@ -120,7 +120,7 @@ article:nth-of-type(2) {
 
 article:nth-of-type(2) ul, .list {
   list-style: disc;
-  padding: 0 3rem;
+  padding: 0 .5rem;
 }
 
 .video-caption>div:first-of-type {
@@ -168,17 +168,17 @@ article:not(article:first-of-type) .logo {
   flex-direction: row-reverse;
 }
 
-article:not(article:first-of-type) .logo>div p:first-of-type {
-  font-size: 1.3rem;
+article:not(article:first-of-type) .logo>div>p:first-of-type {
+  font-size: .9rem;
 }
 
 article:not(article:first-of-type) .home-icon {
-  width: 3.5rem;
+  width: 2rem;
   margin-left: 5px;
 }
 
-article:not(article:first-of-type) .logo>p {
-  font-size: 9px;
+article:not(article:first-of-type) .logo p {
+  font-size: .5rem;
   letter-spacing: .9px;
 }
 
@@ -188,7 +188,7 @@ footer>div {
 }
 
 footer {
-  width: 100%;
+  width:calc( 100% );
   position: absolute;
   bottom: 1rem;
   right: 0;
@@ -198,6 +198,7 @@ footer {
 table {
   width: 100%;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 tr {
@@ -293,5 +294,8 @@ section h4 {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr;
+  }
+  .logo>div p:first-of-type,h1 {
+    font-size: 2.5rem;
   }
 }
