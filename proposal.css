@@ -122,7 +122,9 @@ article:nth-of-type(2) ul, .list {
   list-style: disc;
   padding: 0 .5rem;
 }
-
+li{
+  margin-left: 15px;
+}
 .video-caption>div:first-of-type {
   padding: .5rem;
   text-align: justify;
@@ -162,6 +164,9 @@ article:not(article:first-of-type) header {
   top: 1rem;
   right: 2rem;
 }
+article:not(article:first-of-type):last-child{
+  margin-bottom: 50px;
+}
 
 article:not(article:first-of-type) .logo {
   display: flex;
@@ -169,11 +174,11 @@ article:not(article:first-of-type) .logo {
 }
 
 article:not(article:first-of-type) .logo>div>p:first-of-type {
-  font-size: .9rem;
+  font-size: 12px;
 }
 
 article:not(article:first-of-type) .home-icon {
-  width: 2rem;
+  max-width: 32px;
   margin-left: 5px;
 }
 
@@ -188,7 +193,7 @@ footer>div {
 }
 
 footer {
-  width:calc( 100% );
+  width:100%;
   position: absolute;
   bottom: 1rem;
   right: 0;
@@ -297,5 +302,8 @@ section h4 {
   }
   .logo>div p:first-of-type,h1 {
     font-size: 2.5rem;
+  }
+  article:not(article:first-of-type):last-child{
+    margin-bottom: 0;
   }
 }
