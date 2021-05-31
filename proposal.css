@@ -161,31 +161,31 @@ li {
   justify-content: space-between;
 }
 
-article:not(article:first-of-type) header {
+.inside-page header {
   position: absolute;
   top: 1rem;
   right: 2rem;
 }
 
-article:not(article:first-of-type) {
+.inside-page {
   padding-bottom: 120px;
 }
 
-article:not(article:first-of-type) .logo {
+.inside-page.logo {
   display: flex;
   flex-direction: row-reverse;
 }
 
-article:not(article:first-of-type) .logo>div>p:first-of-type {
+.inside-page .logo>div>p:first-of-type {
   font-size: 12px;
 }
 
-article:not(article:first-of-type) .home-icon {
+.home-icon {
   max-width: 32px;
   margin-left: 5px;
 }
 
-article:not(article:first-of-type) .home-icon img {
+.home-icon img {
   width: 100%;
   max-width: 32px;
 }
@@ -313,7 +313,7 @@ section h4 {
   .logo>div p:first-of-type, h1 {
     font-size: 2.5rem;
   }
-  article:not(article:first-of-type):last-child {
+  .inside-page:last-child {
     margin-bottom: 0;
   }
   footer>div {
