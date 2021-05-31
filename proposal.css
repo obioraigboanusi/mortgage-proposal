@@ -48,11 +48,11 @@ header {
   font-size: 1.5rem;
 }
 
-.home-icon img {
+.main-header img {
   width: 100%;
 }
 
-.home-icon.main-header {
+.main-header {
   max-width: 200px;
   margin-left: auto;
 }
@@ -185,6 +185,11 @@ article:not(article:first-of-type) .home-icon {
   margin-left: 5px;
 }
 
+article:not(article:first-of-type) .home-icon img {
+  width: 100%;
+  max-width: 32px;
+}
+
 article:not(article:first-of-type) .logo p {
   font-size: .5rem;
   letter-spacing: .9px;
@@ -197,12 +202,15 @@ footer {
   right: 0;
   padding: 0 2rem;
 }
-footer>div>div:first-of-type{
+
+footer>div>div:first-of-type {
   margin-bottom: .5rem;
 }
-.table-wrapper{
+
+.table-wrapper {
   overflow-x: auto;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
