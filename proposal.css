@@ -190,7 +190,7 @@ li {
   max-width: 32px;
 }
 
-article:not(article:first-of-type) .logo p {
+.inside-page .logo p {
   font-size: .5rem;
   letter-spacing: .9px;
 }
