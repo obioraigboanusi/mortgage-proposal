@@ -193,10 +193,12 @@ li {
 .inside-page .logo p {
   font-size: .5rem;
   letter-spacing: .9px;
+  color: gray;
 }
 
 footer {
   width: 100%;
+  color: gray;
   position: absolute;
   bottom: 1rem;
   right: 0;
